@@ -1,18 +1,21 @@
 {
-  "name": "counter-api",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.js"
-  },
-  "dependencies": {
-    "@elysiajs/swagger": "^1.2.0",
-    "@nexusog/golakost": "^0.3.0",
-    "elysia": "latest",
-    "node-appwrite": "^15.0.0"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "counter-api",
+	"version": "1.0.50",
+	"scripts": {
+		"dev": "bun run --watch src/index.js",
+		"format": "prettier --write **/*.{js,ts,json}",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@elysiajs/swagger": "^1.2.0",
+		"@nexusog/golakost": "^0.3.0",
+		"elysia": "latest",
+		"node-appwrite": "^15.0.0"
+	},
+	"devDependencies": {
+		"bun-types": "latest",
+		"husky": "^9.1.7",
+		"prettier": "^3.5.1"
+	},
+	"module": "src/index.js"
 }
